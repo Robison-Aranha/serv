@@ -7,7 +7,4 @@ s.listen(1)
 
 while True:
     clientsocket, adress = s.accept()
-    try:
-        clientsocket.send(bytes(input(""), "utf-8"))
-    except:
-        pass
+    clientsocket.send(bytes(input(""), "utf-8"))
